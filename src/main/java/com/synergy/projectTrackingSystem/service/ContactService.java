@@ -4,9 +4,9 @@ import com.synergy.projectTrackingSystem.domain.entitiy.Contact;
 
 public interface ContactService {
 
-    Contact addContact(Contact contact);
+    Contact addContact(long projectId, Contact contact);
 
-    Contact editContact(Contact contact);
+    Contact editContact(Long projectId, Long contactId, Contact newContact);
 
-    void deleteContact(long id);
+    void deleteContact(long projectId, long contactId);
 }
